@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/admin/Documents/C Personal Workspace/CPP-Matrix/Matrix.cpp">
+			<Option target="CPP_Matrix"/>
+		</Unit>
+		<Unit filename="/Users/admin/Documents/C Personal Workspace/CPP-Matrix/Matrix.h">
+			<Option target="CPP_Matrix"/>
+		</Unit>
 		<Unit filename="/Users/admin/Documents/C Personal Workspace/CPP-Matrix/main.cpp">
 			<Option target="CPP_Matrix"/>
 		</Unit>
