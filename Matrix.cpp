@@ -78,6 +78,21 @@ void Matrix::set_num_of_columns(int num_of_columns) {
 }
 
 //
+std::vector<double> Matrix::get_dimensions() {
+
+    return std::vector<double>();
+
+}
+
+//
+void Matrix::set_dimensions(std::vector<int> dimensions) {
+
+    this->dimensions = dimensions;
+
+}
+
+
+//
 void Matrix::display_matrix() {
 
     for (std::vector<double> row : this->rows) {
@@ -124,6 +139,7 @@ Matrix operator+(Matrix l_matrix, const Matrix &r_matrix) {
     return Matrix(sums);
 
 }
+
 
 
 

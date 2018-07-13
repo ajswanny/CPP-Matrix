@@ -46,10 +46,16 @@ protected:
      */
     void set_num_of_columns(int num_of_columns);
 
+    /**
+     *
+     * @param dimensions
+     */
+    void set_dimensions(std::vector<int> dimensions);
 
 
 public:
 
+    /*/ Methods /*/
 
     Matrix();
 
@@ -79,7 +85,11 @@ public:
      */
     unsigned long get_num_of_columns();
 
-
+    /**
+     *
+     * @return
+     */
+    std::vector<double> get_dimensions();
 
     /**
      *
