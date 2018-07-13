@@ -114,6 +114,9 @@ public:
     friend Matrix operator+ (Matrix l_matrix, const Matrix& r_matrix);
 
 
+    friend Matrix operator- (Matrix l_matrix, const Matrix& r_matrix);
+
+
 
 };
 

@@ -140,6 +140,33 @@ Matrix operator+(Matrix l_matrix, const Matrix &r_matrix) {
 
 }
 
+Matrix operator-(Matrix l_matrix, const Matrix &r_matrix) {
+
+    std::vector<std::vector<double>> differences;
+
+    for (int i = 0; i < l_matrix.rows.size(); i++) {
+
+        std::vector<double> left_row_x = l_matrix.rows[i];
+        std::vector<double> right_row_x = r_matrix.rows[i];
+        std::vector<double> new_row_x;
+
+        for (int j = 0; j < left_row_x.size(); j++) {
+
+            // Perform subtraction.
+            new_row_x.push_back(left_row_x[j] - right_row_x[j]);
+
+
+        }
+
+        differences.push_back(new_row_x);
+
+    }
+
+    return Matrix(differences);
+
+}
+
+
 
 
 

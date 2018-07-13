@@ -23,7 +23,7 @@ int main() {
 
     std::cout << "\n";
 
-    Matrix matrix3 = matrix1 + matrix2;
+    Matrix matrix3 = matrix1 - matrix2;
 
     matrix3.display_matrix();
 
