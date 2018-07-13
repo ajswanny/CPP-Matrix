@@ -14,7 +14,6 @@
     <list default="true" id="df60be2a-f409-41d7-a1aa-5b295263061b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Matrix.cpp" afterPath="$PROJECT_DIR$/Matrix.cpp" />
-      <change beforePath="$PROJECT_DIR$/Matrix.h" afterPath="$PROJECT_DIR$/Matrix.h" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPP_Matrix.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPP_Matrix.dir/depend.make" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -45,8 +44,8 @@
           <file leaf-file-name="Matrix.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Matrix.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="457">
-                  <caret line="43" column="7" lean-forward="false" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+                <state relative-caret-position="195">
+                  <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
                   <folding>
                     <element signature="e#189#206#0" expanded="true" />
                   </folding>
@@ -61,10 +60,10 @@
           <file leaf-file-name="Matrix.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Matrix.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-651">
-                  <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
                   <folding>
-                    <element signature="e#39#58#0" expanded="true" />
+                    <element signature="e#139#158#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -88,8 +87,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Matrix.cpp" />
         <option value="$PROJECT_DIR$/Matrix.h" />
+        <option value="$PROJECT_DIR$/Matrix.cpp" />
       </list>
     </option>
   </component>
@@ -195,7 +194,7 @@
       <updated>1531417405667</updated>
       <workItem from="1531417406855" duration="484000" />
       <workItem from="1531417966399" duration="151000" />
-      <workItem from="1531418558322" duration="8958000" />
+      <workItem from="1531418558322" duration="9021000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading new &quot;gitignore&quot; file.">
       <created>1531418649379</created>
@@ -218,11 +217,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531440669426</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added basic documentation.">
+      <created>1531442052049</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1531442052049</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9593000" />
+    <option name="totallyTimeSpent" value="9656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -258,7 +264,8 @@
     <MESSAGE value="Uploading new &quot;gitignore&quot; file." />
     <MESSAGE value="Added header and CPP files to CMakeLists" />
     <MESSAGE value="Uploading program files. Completed unregulated Matrix creation and Matrix addition." />
-    <option name="LAST_COMMIT_MESSAGE" value="Uploading program files. Completed unregulated Matrix creation and Matrix addition." />
+    <MESSAGE value="Added basic documentation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic documentation." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -329,18 +336,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Matrix.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-651">
-          <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+        <state relative-caret-position="60">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
           <folding>
-            <element signature="e#39#58#0" expanded="true" />
+            <element signature="e#139#158#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Matrix.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="43" column="7" lean-forward="false" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+        <state relative-caret-position="195">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding>
             <element signature="e#189#206#0" expanded="true" />
           </folding>

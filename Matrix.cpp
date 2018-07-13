@@ -1,5 +1,7 @@
 //
-// Created by Admin on 7/12/18.
+// Created by Alexander Swanson on 7/12/18.
+// Copyright (c) 2018, Alexander Joseph Swanson Villares
+// alexjosephswanson@gmail.com
 //
 
 #include <iostream>
