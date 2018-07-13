@@ -41,12 +41,26 @@ Matrix::Matrix(std::vector<double> in_vector) {
 //
 Matrix::Matrix(const std::vector<std::vector<double>> &in_vectors) {
 
+    // Determine is the Matrix is not symmetrical (Corresponding ROW and
+    // COLUMN dimensions).
+    for (const std::vector<double> &row : in_vectors) {
+
+        if (static_cast<int>(row.size()) != static_cast<int>(in_vectors[0].size())) {
+
+            std::cout << "Created unsymmetrical Matrix." << std::endl;
+
+        }
+
+    }
+
+    // Define a collection of the ROWS.
     for (const std::vector row : in_vectors) {
 
         this->rows.push_back(row);
 
     }
 
+    // Define a collection of the COLUMNS.
     for (int i = 0; i < in_vectors.size(); i++) {
 
         std::vector<double> new_column_x;

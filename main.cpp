@@ -33,7 +33,6 @@ int main() {
     matrix3.display_transpose();
 
 
-//    for (int i = 0; i < matrix1[0].size(); i++) {std::cout << matrix1[0][i] << std::endl;}
 
     return 0;
 }
