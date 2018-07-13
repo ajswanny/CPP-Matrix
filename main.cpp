@@ -17,7 +17,7 @@ int main() {
 
     std::cout << "\n";
 
-    Matrix matrix2 = Matrix({{1, 1, 1}, {1, 1, 1}, {1, 1, 1}});
+    Matrix matrix2 = Matrix({{1, 1, 1}, {2, 2, 2}, {3, 3, 3}});
 
     matrix2.display_matrix();
 
@@ -27,8 +27,10 @@ int main() {
 
     matrix3.display_matrix();
 
+    std::cout << "\n";
 
 
+    matrix3.display_transpose();
 
 
 //    for (int i = 0; i < matrix1[0].size(); i++) {std::cout << matrix1[0][i] << std::endl;}

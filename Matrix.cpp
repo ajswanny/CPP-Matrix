@@ -19,9 +19,6 @@ Matrix::Matrix() {
 // Creates a Matrix with a single row.
 Matrix::Matrix(std::vector<double> in_vector) {
 
-    // Define new dimensions.
-    this->dimensions = {1, 0};
-
     // Append 1D vector to collection of ROWS.
     this->rows.push_back(in_vector);
 
@@ -31,6 +28,9 @@ Matrix::Matrix(std::vector<double> in_vector) {
         this->elements.push_back(i);
 
     }
+
+    // Define new dimensions.
+    this->dimensions = {1, 0};
 
     // Update statistical data.
     this->num_of_rows = 1;
@@ -46,6 +46,30 @@ Matrix::Matrix(const std::vector<std::vector<double>> &in_vectors) {
         this->rows.push_back(row);
 
     }
+
+    for (int i = 0; i < in_vectors.size(); i++) {
+
+        std::vector<double> new_column_x;
+
+        for (std::vector<double> row : in_vectors) {
+
+            new_column_x.push_back(row[i]);
+
+        }
+
+        this->columns.push_back(new_column_x);
+
+    }
+
+    // Define new dimensions.
+    this->dimensions = {
+            static_cast<int>(in_vectors.size()),
+            static_cast<int>(in_vectors[0].size())
+    };
+
+    // Update statistical data.
+    this->num_of_rows = dimensions[0];
+    this->num_of_columns = dimensions[1];
 
 }
 
@@ -78,9 +102,9 @@ void Matrix::set_num_of_columns(int num_of_columns) {
 }
 
 //
-std::vector<double> Matrix::get_dimensions() {
+std::vector<int> Matrix::get_dimensions() {
 
-    return std::vector<double>();
+    return this->dimensions;
 
 }
 
@@ -91,11 +115,39 @@ void Matrix::set_dimensions(std::vector<int> dimensions) {
 
 }
 
+//
+std::vector<std::vector<double>> Matrix::get_columns() {
+
+    return this->columns;
+
+}
+
+//
+std::vector<std::vector<double>> Matrix::get_rows() {
+
+    return this->columns;
+
+}
 
 //
 void Matrix::display_matrix() {
 
     for (std::vector<double> row : this->rows) {
+
+        for (double e : row) {
+            std::cout << e << "\t";
+        }
+
+        std::cout << "\n";
+
+    }
+
+}
+
+//
+void Matrix::display_transpose() {
+
+    for (std::vector<double> row : this->columns) {
 
         for (double e : row) {
             std::cout << e << "\t";

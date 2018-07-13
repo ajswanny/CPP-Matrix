@@ -89,12 +89,29 @@ public:
      *
      * @return
      */
-    std::vector<double> get_dimensions();
+    std::vector<int> get_dimensions();
+
+    /**
+     *
+     * @return
+     */
+    std::vector<std::vector<double>> get_rows();
+
+    /**
+     *
+     * @return
+     */
+    std::vector<std::vector<double>> get_columns();
 
     /**
      *
      */
     void display_matrix();
+
+    /**
+     *
+     */
+    void display_transpose();
 
     /**
      * Operator overload to return ROWS.
@@ -113,7 +130,12 @@ public:
      */
     friend Matrix operator+ (Matrix l_matrix, const Matrix& r_matrix);
 
-
+    /**
+     *
+     * @param l_matrix
+     * @param r_matrix
+     * @return
+     */
     friend Matrix operator- (Matrix l_matrix, const Matrix& r_matrix);
 
 
