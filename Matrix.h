@@ -15,6 +15,8 @@ class Matrix {
 
 protected:
 
+    /*/ Data Fields /*/
+
     // The number of rows and columns.
     int num_of_rows;
     int num_of_columns;
@@ -30,29 +32,77 @@ protected:
     std::vector<int> dimensions;
 
 
+    /*/ Methods /*/
+
+    /**
+     *
+     * @param num_of_rows
+     */
+    void set_num_of_rows(int num_of_rows);
+
+    /**
+     *
+     * @param num_of_columns
+     */
+    void set_num_of_columns(int num_of_columns);
+
+
+
 public:
 
 
     Matrix();
 
-    // Constructor to initialize 1x0 matrix.
+    /**
+     * Constructor to initialize an empty Matrix.
+     *
+     * @param in_vector
+     */
     explicit Matrix(std::vector<double> in_vector);
 
+    /**
+     * Constructor to initialize a 1x0 Matrix.
+     *
+     * @param in_vectors
+     */
     explicit Matrix(const std::vector<std::vector<double>> &in_vectors);
+
+    /**
+     *
+     * @return
+     */
+    unsigned long get_num_of_rows();
+
+    /**
+     *
+     * @return
+     */
+    unsigned long get_num_of_columns();
+
+
+
+    /**
+     *
+     */
+    void display_matrix();
 
     /**
      * Operator overload to return ROWS.
      * Can continue to then index a returned ROW.
+     *
+     * @param element_index
+     * @return
      */
     std::vector<double> operator[] (int element_index);
 
+    /**
+     *
+     * @param l_matrix
+     * @param r_matrix
+     * @return
+     */
     friend Matrix operator+ (Matrix l_matrix, const Matrix& r_matrix);
 
-    void display_matrix();
-
-    int get_num_of_rows() {
-        return rows.size();
-    }
 
 
 };

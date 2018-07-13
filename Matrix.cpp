@@ -36,7 +36,7 @@ Matrix::Matrix(std::vector<double> in_vector) {
 
 }
 
-
+//
 Matrix::Matrix(const std::vector<std::vector<double>> &in_vectors) {
 
     for (const std::vector row : in_vectors) {
@@ -47,14 +47,57 @@ Matrix::Matrix(const std::vector<std::vector<double>> &in_vectors) {
 
 }
 
+//
+unsigned long Matrix::get_num_of_rows() {
 
+    return this->rows.size();
+
+}
+
+//
+void Matrix::set_num_of_rows(int num_of_rows) {
+
+    this->num_of_rows = num_of_rows;
+
+}
+
+//
+unsigned long Matrix::get_num_of_columns() {
+
+    return this->columns.size();
+
+}
+
+//
+void Matrix::set_num_of_columns(int num_of_columns) {
+
+    this->num_of_columns = num_of_columns;
+
+}
+
+//
+void Matrix::display_matrix() {
+
+    for (std::vector<double> row : this->rows) {
+
+        for (double e : row) {
+            std::cout << e << "\t";
+        }
+
+        std::cout << "\n";
+
+    }
+
+}
+
+//
 std::vector<double> Matrix::operator[](int element_index) {
 
     return this->rows[element_index];
 
 }
 
-
+//
 Matrix operator+(Matrix l_matrix, const Matrix &r_matrix) {
 
     std::vector<std::vector<double>> sums;
@@ -80,19 +123,7 @@ Matrix operator+(Matrix l_matrix, const Matrix &r_matrix) {
 
 }
 
-void Matrix::display_matrix() {
 
-    for (std::vector<double> row : this->rows) {
-
-        for (double e : row) {
-            std::cout << e << "\t";
-        }
-
-        std::cout << "\n";
-
-    }
-
-}
 
 
 
