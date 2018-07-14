@@ -138,6 +138,14 @@ public:
      */
     friend Matrix operator- (Matrix l_matrix, const Matrix& r_matrix);
 
+    /**
+     *
+     * @param l_matrix
+     * @param r_matrix
+     * @return
+     */
+    friend Matrix operator* (Matrix l_matrix, const Matrix& r_matrix);
+
 
 
 };

@@ -232,6 +232,45 @@ Matrix operator-(Matrix l_matrix, const Matrix &r_matrix) {
 
 }
 
+/**
+ *
+ * @param l_matrix
+ * @param r_matrix
+ * @return
+ */
+Matrix operator*(Matrix l_matrix, const Matrix &r_matrix) {
+
+    std::vector<std::vector<double>> products;
+
+    for (int i = 0; i < l_matrix.rows.size(); i++) {
+
+        std::vector<double> left_row_x = l_matrix.rows[i];
+        std::vector<double> right_column_x = r_matrix.columns[i];
+
+        std::vector<double> new_row_x;
+
+        for (int j = 0; j < r_matrix.columns.size(); j++) {
+
+            double products_sum = 0;
+
+            for (int k = 0; k < l_matrix.rows.size(); i++) {
+
+                products_sum += (left_row_x[k] * right_column_x[k]);
+
+            }
+
+            new_row_x.push_back(products_sum);
+
+        }
+
+        products.push_back(new_row_x);
+
+    }
+
+    return Matrix(products);
+
+}
+
 
 
 
