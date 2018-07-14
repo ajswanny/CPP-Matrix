@@ -12,9 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df60be2a-f409-41d7-a1aa-5b295263061b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Matrix.cpp" afterPath="$PROJECT_DIR$/Matrix.cpp" />
-      <change beforePath="$PROJECT_DIR$/Matrix.h" afterPath="$PROJECT_DIR$/Matrix.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,7 +69,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Matrix.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Matrix.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Matrix.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="525">
@@ -78,6 +77,16 @@
                   <folding>
                     <element signature="e#139#158#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -97,12 +106,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Matrix.h" />
         <option value="$PROJECT_DIR$/Matrix.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -158,6 +167,11 @@
               <item name="CPP_Matrix" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="CPP-Matrix" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CPP_Matrix" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="CPP-Matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -211,7 +225,7 @@
       <workItem from="1531418558322" duration="15532000" />
       <workItem from="1531459457200" duration="48000" />
       <workItem from="1531459553288" duration="2776000" />
-      <workItem from="1531600739639" duration="681000" />
+      <workItem from="1531600739639" duration="729000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading new &quot;gitignore&quot; file.">
       <created>1531418649379</created>
@@ -283,11 +297,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531459231085</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added Matrix multiplication (not functional).">
+      <created>1531611351113</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1531611351113</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19672000" />
+    <option name="totallyTimeSpent" value="19720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -330,7 +351,8 @@
     <MESSAGE value="Overloaded subtraction operator." />
     <MESSAGE value="Added functionality to display the transpose of a Matrix and more utility methods." />
     <MESSAGE value="Added warning for creation of unsymmetrical matrices." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added warning for creation of unsymmetrical matrices." />
+    <MESSAGE value="Added Matrix multiplication (not functional)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Matrix multiplication (not functional)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -466,14 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5845">
@@ -539,6 +553,14 @@
           <folding>
             <element signature="e#139#158#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
