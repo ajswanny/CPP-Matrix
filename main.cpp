@@ -23,14 +23,15 @@ int main() {
 
     std::cout << "\n";
 
-    Matrix matrix3 = matrix1 - matrix2;
+//    Matrix matrix3 = matrix1 - matrix2;
+//
+//    matrix3.display_matrix();
+//
+//    std::cout << "\n";
 
-    matrix3.display_matrix();
+    Matrix matrix4 = matrix1 * matrix2;
 
-    std::cout << "\n";
-
-
-    matrix3.display_transpose();
+    matrix4.display_matrix();
 
 
 
