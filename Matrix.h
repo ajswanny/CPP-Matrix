@@ -4,6 +4,10 @@
 // alexjosephswanson@gmail.com
 //
 
+// TODO: Fix definition of collection of columns.
+// TODO: Implement definition of collection of the Transpose.
+// TODO: Correct Matrix multiplication.
+
 #ifndef MATRIX_MATRIX_H
 #define MATRIX_MATRIX_H
 
