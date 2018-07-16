@@ -244,6 +244,7 @@ Matrix operator+(Matrix l_matrix, const Matrix &r_matrix) {
 
 }
 
+//
 Matrix operator-(Matrix l_matrix, const Matrix &r_matrix) {
 
     std::vector<std::vector<double>> differences;
