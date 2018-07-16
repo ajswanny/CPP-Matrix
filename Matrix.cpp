@@ -312,11 +312,3 @@ Matrix operator*(Matrix l_matrix, const Matrix &r_matrix) {
 
 }
 
-
-
-
-
-
-
-
-
