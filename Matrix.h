@@ -4,8 +4,6 @@
 // alexjosephswanson@gmail.com
 //
 
-// TODO: Fix definition of collection of columns.
-// TODO: Implement definition of collection of the Transpose.
 // TODO: Correct Matrix multiplication.
 
 #ifndef MATRIX_MATRIX_H
@@ -25,9 +23,10 @@ protected:
     int num_of_rows;
     int num_of_columns;
 
-    // The collections of the rows and the columns.
+    // The collections of the rows, columns, and the transpose.
     std::vector<std::vector<double>> rows;
     std::vector<std::vector<double>> columns;
+    std::vector<std::vector<double>> transpose;
 
     // The vector of the elements of the matrix.
     std::vector<double> elements;
@@ -116,6 +115,11 @@ public:
      *
      */
     void display_transpose();
+
+    /**
+     *
+     */
+    void display_columns();
 
     /**
      * Operator overload to return ROWS.

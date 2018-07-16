@@ -65,13 +65,28 @@ Matrix::Matrix(const std::vector<std::vector<double>> &in_vectors) {
 
         std::vector<double> new_column_x;
 
+        for (int j = 0; j < in_vectors[i].size(); j++) {
+
+            new_column_x.push_back(in_vectors[j][i]);
+
+        }
+
+        this->columns.push_back(new_column_x);
+
+    }
+
+    // Define the TRANSPOSE.
+    for (int i = 0; i < in_vectors.size(); i++) {
+
+        std::vector<double> new_column_x;
+
         for (std::vector<double> row : in_vectors) {
 
             new_column_x.push_back(row[i]);
 
         }
 
-        this->columns.push_back(new_column_x);
+        this->transpose.push_back(new_column_x);
 
     }
 
@@ -161,9 +176,25 @@ void Matrix::display_matrix() {
 //
 void Matrix::display_transpose() {
 
-    for (std::vector<double> row : this->columns) {
+    for (std::vector<double> row : this->transpose) {
 
         for (double e : row) {
+            std::cout << e << "\t";
+        }
+
+        std::cout << "\n";
+
+    }
+
+}
+
+//
+void Matrix::display_columns() {
+
+
+    for (std::vector<double> column : this->columns) {
+
+        for (double e : column) {
             std::cout << e << "\t";
         }
 

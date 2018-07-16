@@ -17,11 +17,17 @@ int main() {
 
     std::cout << "\n";
 
-    Matrix matrix2 = Matrix({{1, 1, 1}, {2, 2, 2}, {3, 3, 3}});
+    Matrix matrix2 = Matrix({{1, 2, 1}, {5, 8, 2}, {10, 10, 3}});
 
     matrix2.display_matrix();
 
     std::cout << "\n";
+
+    matrix2.display_transpose();
+
+    std::cout << "\n";
+
+    matrix2.display_columns();
 
 //    Matrix matrix3 = matrix1 - matrix2;
 //
