@@ -147,6 +147,7 @@ public:
     friend Matrix operator- (Matrix l_matrix, const Matrix& r_matrix);
 
     /**
+     * Performs matrix multiplication.
      *
      * @param l_matrix
      * @param r_matrix
