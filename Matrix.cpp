@@ -36,6 +36,9 @@ Matrix::Matrix(std::vector<double> in_vector) {
     this->num_of_rows = 1;
     this->num_of_columns = 0;
 
+    // Define the determinant.
+    this->has_determinant = false;
+
 }
 
 //
@@ -54,7 +57,7 @@ Matrix::Matrix(const std::vector<std::vector<double>> &in_vectors) {
     }
 
     // Define a collection of the ROWS.
-    for (const std::vector row : in_vectors) {
+    for (const std::vector row : in_vectors) { // NOLINT
 
         this->rows.push_back(row);
 
@@ -99,6 +102,9 @@ Matrix::Matrix(const std::vector<std::vector<double>> &in_vectors) {
     // Update statistical data.
     this->num_of_rows = dimensions[0];
     this->num_of_columns = dimensions[1];
+
+    // Define the determinant.
+    this->calculate_determinant();
 
 }
 
@@ -165,6 +171,21 @@ std::vector<std::vector<double>> Matrix::get_transpose() {
 
 }
 
+double Matrix::get_determinant() {
+
+    if (has_determinant) {
+
+        return this->determinant;
+
+    } else {
+
+        std::cout << "The Matrix's determinant cannot be calculated. Will return '111111111'" << std::endl;
+        return 111111111;
+
+    }
+
+}
+
 //
 void Matrix::display_matrix() {
 
@@ -206,6 +227,58 @@ void Matrix::display_columns() {
         }
 
         std::cout << "\n";
+
+    }
+
+}
+
+//
+void Matrix::calculate_determinant() {
+
+    // Define references to Matrix dimensions.
+    std::vector<int> two_x_two = {2, 2};
+    std::vector<int> three_x_three = {3, 3};
+
+    if (this->dimensions == two_x_two) {
+        // Calculate the determinant for a 2x2 Matrix, where det(M) = a*d - b*c.
+
+        // Calculate the products of the diagonals.
+        double element_one = rows[0][0] * rows[1][1];
+        double element_two = rows[0][1] * rows[1][0];
+
+        // Define the determinant.
+        this->determinant = element_one - element_two;
+        this->has_determinant = true;
+
+    }
+
+    if (this->dimensions == three_x_three) {
+        // Calculate the determinant for a 3x3 Matrix, where
+        // det(M) = a_1,1 * C_1,1 - a_1,2 * C_1,2 + a_1,3 * C_1,3.
+
+        // Calculate the co-factors.
+        double element_one = rows[0][0] * (
+                rows[1][1] * rows[2][2] - rows[1][2] * rows[2][1]
+                                          );
+
+        double element_two = rows[0][1] * (
+                rows[1][0] * rows[2][2] - rows[1][2] * rows[2][0]
+                                          );
+
+        double element_three = rows[0][2] * (
+                rows[1][0] * rows[2][1] - rows[1][1] * rows[2][0]
+                                            );
+
+        // Define the determinant.
+        this->determinant = element_one - element_two + element_three;
+        this->has_determinant = true;
+
+    }
+
+    else {
+
+        std::cout << "The determinant could not be calculated." << std::endl;
+        this->has_determinant = false;
 
     }
 

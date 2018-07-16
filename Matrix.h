@@ -30,11 +30,17 @@ private:
     std::vector<std::vector<double>> columns;
     std::vector<std::vector<double>> transpose;
 
-    // The vector of the elements of the matrix.
+    // The vector of the elements of the Matrix.
     std::vector<double> elements;
 
-    // The dimensions of the matrix.
+    // The dimensions of the Matrix.
     std::vector<int> dimensions;
+
+    // The boolean indicating whether or not the Matrix's determinant can be calculated.
+    bool has_determinant;
+
+    // The determinant of the Matrix.
+    double determinant;
 
 
     /*/ Methods /*/
@@ -127,6 +133,13 @@ public:
     std::vector<std::vector<double>> get_transpose();
 
     /**
+     * Returns the DETERMINANT of the Matrix.
+     *
+     * @return
+     */
+    double get_determinant();
+
+    /**
      * Displays the Matrix in MatrixForm.
      */
     void display_matrix();
@@ -140,6 +153,12 @@ public:
      * Displays the COLUMNS of the Matrix in MatrixForm.
      */
     void display_columns();
+
+    /**
+     * Calculates the determinant of a 2x2 or 3x3 Matrix.
+     */
+    void calculate_determinant();
+
 
     /**
      * Operator overload to return ROWS from a Matrix.
