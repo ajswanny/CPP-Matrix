@@ -54,7 +54,7 @@ Matrix::Matrix(const std::vector<std::vector<double>> &in_vectors) {
     }
 
     // Define a collection of the ROWS.
-    for (const std::vector row : in_vectors) {
+    for (const std::vector &row : in_vectors) {
 
         this->rows.push_back(row);
 
@@ -78,15 +78,15 @@ Matrix::Matrix(const std::vector<std::vector<double>> &in_vectors) {
     // Define the TRANSPOSE.
     for (int i = 0; i < in_vectors.size(); i++) {
 
-        std::vector<double> new_column_x;
+        std::vector<double> new_row_x;
 
         for (std::vector<double> row : in_vectors) {
 
-            new_column_x.push_back(row[i]);
+            new_row_x.push_back(row[i]);
 
         }
 
-        this->transpose.push_back(new_column_x);
+        this->transpose.push_back(new_row_x);
 
     }
 
