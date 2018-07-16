@@ -273,31 +273,42 @@ Matrix operator*(Matrix l_matrix, const Matrix &r_matrix) {
 
     std::vector<std::vector<double>> products;
 
+    // Loop through each ROW of the left matrix.
     for (int i = 0; i < l_matrix.rows.size(); i++) {
 
+        // Define a reference to the current ROW from the left matrix.
         std::vector<double> left_row_x = l_matrix.rows[i];
-        std::vector<double> right_column_x = r_matrix.columns[i];
 
+        // Define a collection of results to become a new ROW for the product.
         std::vector<double> new_row_x;
 
-        for (int j = 0; j < r_matrix.columns.size(); j++) {
 
+        // Loop through each COLUMN of the right matrix.
+        for (const auto &column : r_matrix.columns) {
+
+            // Define a variable to record the sum of the products of the corresponding elements
+            // of the current ROW and COLUMN.
             double products_sum = 0;
 
-            for (int k = 0; k < l_matrix.rows.size(); i++) {
+            // Loop through each of the elements of the current COLUMN.
+            for (int k = 0; k < column.size(); k++) {
 
-                products_sum += (left_row_x[k] * right_column_x[k]);
+                // Find the product of corresponding elements and add to the total sum.
+                products_sum += (left_row_x[k] * column[k]);
 
             }
 
+            // Record the final sum to the new ROW for the multiplication product.
             new_row_x.push_back(products_sum);
 
         }
 
+        // Record the new ROW of the matrix multiplication product.
         products.push_back(new_row_x);
 
     }
 
+    // Return the product.
     return Matrix(products);
 
 }

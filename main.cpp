@@ -11,31 +11,34 @@ int main() {
 
 
 
-    Matrix matrix1 = Matrix({{2, 2, 2}, {2, 5, 2}, {2, 2, 2}});
+    Matrix matrix1 = Matrix({{10, 6, 2}, {2, 5, 4}, {2, 8, 21}});
 
     matrix1.display_matrix();
 
     std::cout << "\n";
 
-    Matrix matrix2 = Matrix({{1, 2, 1}, {5, 8, 2}, {10, 10, 3}});
+    Matrix matrix2 = Matrix({{1, 2, 11}, {15, 18, 12}, {10, 9, 3}});
 
-    matrix2.display_matrix();
-
-    std::cout << "\n";
-
-    matrix2.display_transpose();
-
-    std::cout << "\n";
-
-    matrix2.display_columns();
-
+//    matrix2.display_matrix();
+//
+//    std::cout << "\n";
+//
+//    matrix2.display_transpose();
+//
+//    std::cout << "\n";
+//
+//    matrix2.display_columns();
+//
+//    std::cout << "\n";
+//
 //    Matrix matrix3 = matrix1 - matrix2;
 //
 //    matrix3.display_matrix();
 //
 //    std::cout << "\n";
 
-    Matrix matrix4 = matrix1 * matrix2;
+
+    Matrix matrix4 = matrix1*matrix2;
 
     matrix4.display_matrix();
 
