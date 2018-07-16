@@ -107,22 +107,22 @@ public:
     std::vector<std::vector<double>> get_columns();
 
     /**
-     *
+     * Displays the Matrix in MatrixForm.
      */
     void display_matrix();
 
     /**
-     *
+     * Displays the TRANSPOSE of the Matrix in MatrixForm.
      */
     void display_transpose();
 
     /**
-     *
+     * Displays the COLUMNS of the Matrix in MatrixForm.
      */
     void display_columns();
 
     /**
-     * Operator overload to return ROWS.
+     * Operator overload to return ROWS from a Matrix.
      * Can continue to then index a returned ROW.
      *
      * @param element_index
@@ -131,6 +131,7 @@ public:
     std::vector<double> operator[] (int element_index);
 
     /**
+     * Performs matrix addition.
      *
      * @param l_matrix
      * @param r_matrix
@@ -139,6 +140,7 @@ public:
     friend Matrix operator+ (Matrix l_matrix, const Matrix& r_matrix);
 
     /**
+     * Performs matrix subtraction
      *
      * @param l_matrix
      * @param r_matrix

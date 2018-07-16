@@ -13,7 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="df60be2a-f409-41d7-a1aa-5b295263061b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Matrix.cpp" afterPath="$PROJECT_DIR$/Matrix.cpp" />
+      <change beforePath="$PROJECT_DIR$/Matrix.h" afterPath="$PROJECT_DIR$/Matrix.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +40,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
@@ -53,11 +53,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Matrix.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Matrix.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Matrix.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="338">
-                  <caret line="149" column="38" lean-forward="false" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
+                <state relative-caret-position="280">
+                  <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
                   <folding>
                     <element signature="e#230#247#0" expanded="true" />
                   </folding>
@@ -99,9 +99,9 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Matrix.h" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Matrix.cpp" />
+        <option value="$PROJECT_DIR$/Matrix.h" />
       </list>
     </option>
   </component>
@@ -214,7 +214,7 @@
       <workItem from="1531459553288" duration="2776000" />
       <workItem from="1531600739639" duration="2318000" />
       <workItem from="1531722905906" duration="2234000" />
-      <workItem from="1531726044153" duration="1947000" />
+      <workItem from="1531726044153" duration="2070000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading new &quot;gitignore&quot; file.">
       <created>1531418649379</created>
@@ -335,11 +335,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531727923480</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Refining code for various functions.">
+      <created>1531728110560</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1531728110560</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25490000" />
+    <option name="totallyTimeSpent" value="25613000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -388,7 +395,8 @@
     <MESSAGE value="Corrected the definition of Matrix COLUMNS and implemented the proper&#10;definition of the TRANPOSE." />
     <MESSAGE value="Fixed matrix multiplication and added documentation for the aforementioned functionality." />
     <MESSAGE value="Refined code and updated the &quot;README.&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refined code and updated the &quot;README.&quot;" />
+    <MESSAGE value="Refining code for various functions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refining code for various functions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -604,16 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Matrix.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="149" column="38" lean-forward="false" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
-          <folding>
-            <element signature="e#230#247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -637,6 +635,16 @@
           <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <element signature="e#139#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Matrix.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding>
+            <element signature="e#230#247#0" expanded="true" />
           </folding>
         </state>
       </provider>
