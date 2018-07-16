@@ -13,6 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="df60be2a-f409-41d7-a1aa-5b295263061b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Matrix.cpp" afterPath="$PROJECT_DIR$/Matrix.cpp" />
       <change beforePath="$PROJECT_DIR$/Matrix.h" afterPath="$PROJECT_DIR$/Matrix.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -56,10 +57,10 @@
           <file leaf-file-name="Matrix.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Matrix.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="280">
-                  <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+                <state relative-caret-position="450">
+                  <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
                   <folding>
-                    <element signature="e#230#247#0" expanded="true" />
+                    <element signature="e#190#207#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -72,11 +73,9 @@
           <file leaf-file-name="Matrix.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Matrix.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="387">
-                  <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#139#158#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="105">
+                  <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -214,7 +213,7 @@
       <workItem from="1531459553288" duration="2776000" />
       <workItem from="1531600739639" duration="2318000" />
       <workItem from="1531722905906" duration="2234000" />
-      <workItem from="1531726044153" duration="2070000" />
+      <workItem from="1531726044153" duration="2455000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading new &quot;gitignore&quot; file.">
       <created>1531418649379</created>
@@ -342,11 +341,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531728110560</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added more documentation.">
+      <created>1531728231181</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1531728231181</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25613000" />
+    <option name="totallyTimeSpent" value="25998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -396,7 +402,8 @@
     <MESSAGE value="Fixed matrix multiplication and added documentation for the aforementioned functionality." />
     <MESSAGE value="Refined code and updated the &quot;README.&quot;" />
     <MESSAGE value="Refining code for various functions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refining code for various functions." />
+    <MESSAGE value="Added more documentation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more documentation." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -420,7 +427,7 @@
         <state relative-caret-position="345">
           <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding>
-            <element signature="e#230#247#0" expanded="true" />
+            <element signature="e#190#207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -440,9 +447,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#139#158#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -472,7 +477,7 @@
         <state relative-caret-position="2115">
           <caret line="141" column="6" lean-forward="false" selection-start-line="141" selection-start-column="6" selection-end-line="141" selection-end-column="6" />
           <folding>
-            <element signature="e#230#247#0" expanded="true" />
+            <element signature="e#190#207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -492,7 +497,7 @@
         <state relative-caret-position="345">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#230#247#0" expanded="true" />
+            <element signature="e#190#207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -512,9 +517,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#139#158#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -533,7 +536,7 @@
         <state relative-caret-position="345">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#230#247#0" expanded="true" />
+            <element signature="e#190#207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -550,9 +553,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#139#158#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -631,20 +632,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Matrix.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="e#139#158#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Matrix.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
           <folding>
-            <element signature="e#230#247#0" expanded="true" />
+            <element signature="e#190#207#0" expanded="true" />
           </folding>
         </state>
       </provider>

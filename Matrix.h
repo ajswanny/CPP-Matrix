@@ -4,7 +4,6 @@
 // alexjosephswanson@gmail.com
 //
 
-// TODO: Correct Matrix multiplication.
 
 #ifndef MATRIX_MATRIX_H
 #define MATRIX_MATRIX_H
@@ -15,7 +14,7 @@
 
 class Matrix {
 
-protected:
+private:
 
     /*/ Data Fields /*/
 
@@ -38,18 +37,21 @@ protected:
     /*/ Methods /*/
 
     /**
+     * Sets the number of ROWS.
      *
      * @param num_of_rows
      */
     void set_num_of_rows(int num_of_rows);
 
     /**
+     * Sets the number of COLUMNS.
      *
      * @param num_of_columns
      */
     void set_num_of_columns(int num_of_columns);
 
     /**
+     * Sets the dimensions.
      *
      * @param dimensions
      */
@@ -60,51 +62,66 @@ public:
 
     /*/ Methods /*/
 
+    /**
+     * Constructor to initialize an empty Matrix.
+     */
     Matrix();
 
     /**
-     * Constructor to initialize an empty Matrix.
+     * Constructor to initialize a 1x0 Matrix.
      *
      * @param in_vector
      */
     explicit Matrix(std::vector<double> in_vector);
 
     /**
-     * Constructor to initialize a 1x0 Matrix.
+     * Constructor to initialize a multidimensional Matrix.
      *
      * @param in_vectors
      */
     explicit Matrix(const std::vector<std::vector<double>> &in_vectors);
 
     /**
+     * Returns the number of ROWS.
      *
      * @return
      */
     unsigned long get_num_of_rows();
 
     /**
+     * Returns the number of COLUMNS.
      *
      * @return
      */
     unsigned long get_num_of_columns();
 
     /**
+     * Returns the dimensions of the Matrix.
      *
      * @return
      */
     std::vector<int> get_dimensions();
 
     /**
+     * Returns the COLUMNS of the Matrix.
      *
      * @return
      */
     std::vector<std::vector<double>> get_rows();
 
     /**
+     * Returns the COLUMNS of the Matrix.
      *
      * @return
      */
     std::vector<std::vector<double>> get_columns();
+
+    /**
+     * Returns the TRANSPOSE of the Matrix.
+     *
+     * @return
+     */
+    std::vector<std::vector<double>> get_transpose();
 
     /**
      * Displays the Matrix in MatrixForm.

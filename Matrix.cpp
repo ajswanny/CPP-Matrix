@@ -140,7 +140,14 @@ std::vector<int> Matrix::get_dimensions() {
 //
 void Matrix::set_dimensions(std::vector<int> dimensions) {
 
-    this->dimensions = dimensions;
+    this->dimensions = std::move(dimensions);
+
+}
+
+//
+std::vector<std::vector<double>> Matrix::get_rows() {
+
+    return this->columns;
 
 }
 
@@ -152,9 +159,9 @@ std::vector<std::vector<double>> Matrix::get_columns() {
 }
 
 //
-std::vector<std::vector<double>> Matrix::get_rows() {
+std::vector<std::vector<double>> Matrix::get_transpose() {
 
-    return this->columns;
+    return this->transpose;
 
 }
 
@@ -303,6 +310,8 @@ Matrix operator*(Matrix l_matrix, const Matrix &r_matrix) {
     return Matrix(products);
 
 }
+
+
 
 
 
