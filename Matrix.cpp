@@ -54,7 +54,7 @@ Matrix::Matrix(const std::vector<std::vector<double>> &in_vectors) {
     }
 
     // Define a collection of the ROWS.
-    for (const std::vector &row : in_vectors) {
+    for (const std::vector row : in_vectors) {
 
         this->rows.push_back(row);
 
