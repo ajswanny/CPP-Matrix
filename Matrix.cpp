@@ -37,7 +37,7 @@ Matrix::Matrix(std::vector<double> in_vector) {
     this->num_of_columns = 0;
 
     // Define the determinant.
-    this->has_determinant = false;
+    this->determinant = 0.9;
 
 }
 
@@ -171,18 +171,10 @@ std::vector<std::vector<double>> Matrix::get_transpose() {
 
 }
 
+//
 double Matrix::get_determinant() {
 
-    if (has_determinant) {
-
-        return this->determinant;
-
-    } else {
-
-        std::cout << "The Matrix's determinant cannot be calculated. Will return '111111111'" << std::endl;
-        return 111111111;
-
-    }
+    return this->determinant;
 
 }
 
@@ -248,7 +240,6 @@ void Matrix::calculate_determinant() {
 
         // Define the determinant.
         this->determinant = element_one - element_two;
-        this->has_determinant = true;
 
     }
 
@@ -271,14 +262,13 @@ void Matrix::calculate_determinant() {
 
         // Define the determinant.
         this->determinant = element_one - element_two + element_three;
-        this->has_determinant = true;
 
     }
 
     else {
 
         std::cout << "The determinant could not be calculated." << std::endl;
-        this->has_determinant = false;
+        this->determinant = 0.9;
 
     }
 

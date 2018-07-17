@@ -5,9 +5,6 @@
 //
 
 
-// TODO: Implement Determinant functionality.
-
-
 #ifndef MATRIX_MATRIX_H
 #define MATRIX_MATRIX_H
 
@@ -35,9 +32,6 @@ private:
 
     // The dimensions of the Matrix.
     std::vector<int> dimensions;
-
-    // The boolean indicating whether or not the Matrix's determinant can be calculated.
-    bool has_determinant;
 
     // The determinant of the Matrix.
     double determinant;
@@ -135,6 +129,8 @@ public:
     /**
      * Returns the DETERMINANT of the Matrix.
      *
+     * @details: If a DETERMINANT cannot be calculated for the Matrix,
+     *          its value will be set as '0.9'.
      * @return
      */
     double get_determinant();
