@@ -1,4 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/admin/Documents/C Personal Workspace/CPP-Matrix"
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/admin/Documents/C Personal Workspace/CPP-Matrix/cmake-build-debug
